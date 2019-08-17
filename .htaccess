@@ -1,0 +1,12 @@
+# HTID:9784518: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:9784518:
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -l
+  RewriteRule ^[css|img|js].*$ - [L]
+  RewriteRule ^(.*)$ route.php?action=$1 [QSA,L]
+</IfModule>
+
+
