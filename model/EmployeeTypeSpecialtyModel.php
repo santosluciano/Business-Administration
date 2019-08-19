@@ -15,11 +15,11 @@
     }
 
     public function getById($id){
-        $sentencia = $this->db->prepare(
-            "SELECT * FROM employee_type_specialty WHERE $id = ?" 
-          );
-        $sentencia->execute([$id]);
-        return $sentencia->fetchAll(PDO::FETCH_ASSOC);            
+      $sentencia = $this->db->prepare(
+          "SELECT * FROM employee_type_specialty WHERE id = ?" 
+        );
+      $sentencia->execute([$id]);
+      return $sentencia->fetch(PDO::FETCH_ASSOC);            
     }
 
     public function save($employeeTypeSpecialty){

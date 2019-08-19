@@ -1,22 +1,30 @@
 <?php
   require_once 'model/CompanyModel.php';
+  require_once 'view/CompanyView.php';
+
   class CompanyController extends Controller{
         
     function __construct(){ 
       $this->model = new CompanyModel();
+      $this->view = new CompanyView();
       $this->employeeController = new EmployeeController();
     }
-    public function getCompanyById($id){
-      $companyData = $this->model->getCompanyById($id);
-      return $this->formatDataFromModel($companyData);
+    public function getAll(){
+      $companiesInfo = $this->model->getAllCompanies();
+      $companies = [];
+      foreach ($companiesInfo as $companyInfo){
+        $companies[] = $this->createCompanyObject($companyInfo);
+      }
+      return $companies;
     }
-    private function formatDataFromModel($companyData){
-      $company = new Company();
-      $company->setId($companyData["id"]);
-      $company->setName($companyData["name"]);
-      $employees = $this->employeeController->getEmployeesByCompany($company->getId());
-      $company->setEmployees($employees);
-      
+    public function showAll(){
+      $companies = $this->getAll();
+      $this->view->showCompanies($companies);
+    }
+    private function createCompanyObject($companyInfo){
+      $company = new Company($companyInfo["id"],$companyInfo["name"]);
+      $employees = $this->employeeController->getByCompany($company->getId());
+      $company->setEmployees($employees);      
       return $company;
     }
     public function addEmployee($idEmployee, $idCompany)

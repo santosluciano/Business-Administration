@@ -33,7 +33,7 @@
         }
         public function avgEmployees(){
             $total_age = 0;
-            for ($employees as $employee){
+            foreach ($employees as $employee){
                 $avg += $employee->getAge();
             }
             return $total_age/count($employees); 

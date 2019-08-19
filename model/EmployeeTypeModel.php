@@ -16,10 +16,10 @@
 
     public function getById($id_type){
         $sentencia = $this->db->prepare(
-            "SELECT * FROM employee_type WHERE $id = ?" 
+            "SELECT * FROM employee_type WHERE id = ?" 
           );
         $sentencia->execute([$id_type]);
-        return $sentencia->fetchAll(PDO::FETCH_ASSOC);            
+        return $sentencia->fetch(PDO::FETCH_ASSOC);            
     }
 
     public function save($employeeType){
