@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-08-19 16:40:07
+/* Smarty version 3.1.30, created on 2019-08-19 19:46:57
   from "/opt/lampp/htdocs/proyectos/Business-Administration/templates/index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d5ab4c76754d5_59894652',
+  'unifunc' => 'content_5d5ae0916e1f40_47685653',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5c2678cdc87991f69caad2dedd23166acde0a54a' => 
     array (
       0 => '/opt/lampp/htdocs/proyectos/Business-Administration/templates/index.tpl',
-      1 => 1566225168,
+      1 => 1566236354,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5d5ab4c76754d5_59894652 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d5ae0916e1f40_47685653 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -32,15 +32,20 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto menu">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Empresas</a>
+        <a class="nav-link nav-ajax" href="#" data-action="companies">Empresas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Tipos de empleados</a>
+        <a class="nav-link nav-ajax" href="#">Tipos de empleados</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Especialidades</a>
+        <a class="nav-link nav-ajax" href="#">Especialidades</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link fas fa-arrow-circle-left fa-lg d-none nav-return" href="#"></a>
       </li>
     </ul>
   </div>

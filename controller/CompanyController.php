@@ -17,9 +17,19 @@
       }
       return $companies;
     }
+    public function get($id){
+      $companyInfo = $this->model->getCompanyById($id);
+      $company = $this->createCompanyObject($companyInfo);
+      return $company;
+    }
     public function showAll(){
       $companies = $this->getAll();
       $this->view->showCompanies($companies);
+    }
+    public function show($params){
+      $id = $params[':id'];
+      $company = $this->get($id);
+      $this->view->showCompany($company);
     }
     private function createCompanyObject($companyInfo){
       $company = new Company($companyInfo["id"],$companyInfo["name"]);

@@ -16,6 +16,8 @@
   //(url, verb, controller, method)
   $router->AddRoute("", "GET", "Controller", "layout");
   $router->AddRoute("companies", "GET", "CompanyController", "showAll");
+  $router->AddRoute("company/:id","GET", "CompanyController", "show");
+
 
   // ------------- HANDLER ROUTE ------------------//  
   $route = $_GET['action'];
