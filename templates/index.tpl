@@ -10,10 +10,10 @@
         <a class="nav-link nav-ajax" href="#" data-action="companies">Empresas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-ajax" href="#">Tipos de empleados</a>
+        <a class="nav-link disabled" href="#">Tipos de empleados</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-ajax" href="#">Especialidades</a>
+        <a class="nav-link disabled" href="#">Especialidades</a>
       </li>
     </ul>
     <ul class="navbar-nav">
