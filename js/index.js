@@ -50,7 +50,7 @@ $(document).ready(function(){
     $('body').on('submit','#formCreate',function(e){
         e.preventDefault();
         $.post("addEmployee",$(this).serialize())
-            .done(function(data){
+            .done(function(){
                 get("company/"+$('#companyId').val());
             });
     });
@@ -60,5 +60,13 @@ $(document).ready(function(){
         .done(function(data){
             $('#searchResult').html(data);
         });
+    });
+    $('body').on('click','.delete-employee',function(e){
+        e.preventDefault();
+        $.get("deleteEmployee/"+$(this).data('id'))
+            .done(function(data){
+                get("company/"+$('#companyId').val());
+            })
+            .fail(consoleError);
     });
 });

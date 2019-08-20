@@ -19,7 +19,7 @@
   $router->AddRoute("company/:id","GET", "CompanyController", "show");
   $router->AddRoute("addEmployee","POST", "EmployeeController", "add");
   $router->AddRoute("searchEmployee","POST", "EmployeeController", "searchById");
-
+  $router->AddRoute("deleteEmployee/:id","GET", "EmployeeController", "delete");
 
   // ------------- HANDLER ROUTE ------------------//  
   $route = $_GET['action'];

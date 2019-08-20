@@ -18,7 +18,7 @@
               <td>{$employee->getTypeSpecialty()->getEmployeeType()->getName()}</td>
               <td>{$employee->getTypeSpecialty()->getName()}</td>
               <td><button type="button" class="btn btn-primary fas fa-pen fa-lg" disabled></button>
-              <button type="button" class="btn btn-danger fas fa-trash fa-lg" disabled></button></td>
+              <button type="button" data-id="{$employee->getId()}" class="btn btn-danger fas fa-trash fa-lg delete-employee"></button></td>
           </tr>
           {/foreach}
       </tbody>

@@ -51,5 +51,13 @@
       return $this->db->lastInsertId();
     }
 
+    public function delete($id)
+    {        
+      $sentencia = $this->db->prepare(
+        "DELETE FROM `employee` WHERE `employee`.`id`=?"
+      );
+      $sentencia->execute([$id]);
+    }
+
 }
 ?>

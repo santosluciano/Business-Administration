@@ -51,5 +51,10 @@
       $employee = $this->getById($id,$companyId);
       $this->view->showSearchResult($employee);
     }
+    public function delete($params){
+      $id = $params[':id'];
+      $this->model->delete($id);
+    }
+
   }
 ?>

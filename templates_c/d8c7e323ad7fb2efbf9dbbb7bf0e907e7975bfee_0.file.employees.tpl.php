@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-08-20 06:06:22
+/* Smarty version 3.1.30, created on 2019-08-20 06:21:07
   from "/opt/lampp/htdocs/proyectos/Business-Administration/templates/employees.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d5b71bec90dc3_86920150',
+  'unifunc' => 'content_5d5b7533c7b0c4_18695983',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd8c7e323ad7fb2efbf9dbbb7bf0e907e7975bfee' => 
     array (
       0 => '/opt/lampp/htdocs/proyectos/Business-Administration/templates/employees.tpl',
-      1 => 1566250683,
+      1 => 1566274764,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d5b71bec90dc3_86920150 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d5b7533c7b0c4_18695983 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
   <h1 class="text-center">Listado de empleados</h1>
   <table class="table table-hover table-dark">
@@ -51,7 +51,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['employee']->value) {
               <td><?php echo $_smarty_tpl->tpl_vars['employee']->value->getTypeSpecialty()->getName();?>
 </td>
               <td><button type="button" class="btn btn-primary fas fa-pen fa-lg" disabled></button>
-              <button type="button" class="btn btn-danger fas fa-trash fa-lg" disabled></button></td>
+              <button type="button" data-id="<?php echo $_smarty_tpl->tpl_vars['employee']->value->getId();?>
+" class="btn btn-danger fas fa-trash fa-lg delete-employee"></button></td>
           </tr>
           <?php
 }
