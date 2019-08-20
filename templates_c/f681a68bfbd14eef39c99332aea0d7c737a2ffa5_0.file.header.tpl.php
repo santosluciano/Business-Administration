@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-08-19 19:04:12
+/* Smarty version 3.1.30, created on 2019-08-20 06:06:19
   from "/opt/lampp/htdocs/proyectos/Business-Administration/templates/header.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d5ad68c5795b2_86321884',
+  'unifunc' => 'content_5d5b71bb165f88_96143540',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d5ad68c5795b2_86321884 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d5b71bb165f88_96143540 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="es">

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-08-20 05:05:24
+/* Smarty version 3.1.30, created on 2019-08-20 06:08:27
   from "/opt/lampp/htdocs/proyectos/Business-Administration/templates/searchEmployee.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d5b6374581881_58285683',
+  'unifunc' => 'content_5d5b723bc4bbd0_59931348',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d5b6374581881_58285683 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d5b723bc4bbd0_59931348 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['employee']->value) {?>
     <div class="alert alert-success" role="alert">
     <?php echo $_smarty_tpl->tpl_vars['employee']->value->getFullName();?>

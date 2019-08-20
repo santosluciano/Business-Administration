@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 17-08-2019 a las 22:09:58
+-- Tiempo de generación: 20-08-2019 a las 05:44:19
 -- Versión del servidor: 10.4.6-MariaDB
 -- Versión de PHP: 7.3.8
 
@@ -33,6 +33,14 @@ CREATE TABLE `company` (
   `name` varchar(150) COLLATE utf8_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
+--
+-- Volcado de datos para la tabla `company`
+--
+
+INSERT INTO `company` (`id`, `name`) VALUES
+(1, 'Summa Solutions'),
+(2, 'Soluciones informáticas');
+
 -- --------------------------------------------------------
 
 --
@@ -44,9 +52,18 @@ CREATE TABLE `employee` (
   `name` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
   `last_name` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
   `age` int(11) NOT NULL,
-  `id_company` int(11) NOT NULL,
+  `id_company` int(11) DEFAULT NULL,
   `id_type_specialty` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `employee`
+--
+
+INSERT INTO `employee` (`id`, `name`, `last_name`, `age`, `id_company`, `id_type_specialty`) VALUES
+(1, 'John', 'Doe', 25, 1, 4),
+(2, 'Luciano', 'Santos', 28, 1, 1),
+(3, 'Jose', 'Rodriguez', 30, 2, 3);
 
 -- --------------------------------------------------------
 
@@ -56,8 +73,16 @@ CREATE TABLE `employee` (
 
 CREATE TABLE `employee_type` (
   `id` int(11) NOT NULL,
-  `name` int(11) NOT NULL
+  `name` varchar(100) COLLATE utf8_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `employee_type`
+--
+
+INSERT INTO `employee_type` (`id`, `name`) VALUES
+(1, 'Programador'),
+(2, 'Diseñador');
 
 -- --------------------------------------------------------
 
@@ -70,6 +95,17 @@ CREATE TABLE `employee_type_specialty` (
   `id_employee_type` int(11) NOT NULL,
   `name` varchar(100) COLLATE utf8_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `employee_type_specialty`
+--
+
+INSERT INTO `employee_type_specialty` (`id`, `id_employee_type`, `name`) VALUES
+(1, 1, 'PHP'),
+(2, 1, 'NET'),
+(3, 1, 'Python'),
+(4, 2, 'Gráfico'),
+(5, 2, 'Web');
 
 --
 -- Índices para tablas volcadas
@@ -86,8 +122,8 @@ ALTER TABLE `company`
 --
 ALTER TABLE `employee`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `id_company` (`id_company`,`id_type_specialty`),
-  ADD KEY `id_type_specialty` (`id_type_specialty`);
+  ADD KEY `id_type_specialty` (`id_type_specialty`),
+  ADD KEY `id_company` (`id_company`);
 
 --
 -- Indices de la tabla `employee_type`
@@ -110,25 +146,25 @@ ALTER TABLE `employee_type_specialty`
 -- AUTO_INCREMENT de la tabla `company`
 --
 ALTER TABLE `company`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `employee`
 --
 ALTER TABLE `employee`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `employee_type`
 --
 ALTER TABLE `employee_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `employee_type_specialty`
 --
 ALTER TABLE `employee_type_specialty`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas

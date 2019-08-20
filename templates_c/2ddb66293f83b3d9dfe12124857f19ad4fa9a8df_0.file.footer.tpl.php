@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-08-19 16:42:22
+/* Smarty version 3.1.30, created on 2019-08-20 06:06:19
   from "/opt/lampp/htdocs/proyectos/Business-Administration/templates/footer.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d5ab54edb5725_26844169',
+  'unifunc' => 'content_5d5b71bb168bf1_67187251',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d5ab54edb5725_26844169 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d5b71bb168bf1_67187251 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
   <!--   Core JS Files   -->
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->

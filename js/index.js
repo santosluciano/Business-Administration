@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     get("companies");
 
     function get(action){
@@ -33,11 +34,7 @@ $(document).ready(function(){
 
     $('.nav-return').on('click',function(e){
         e.preventDefault();
-        $.get("")
-        .done(function(data){
-            $('body').html(data);
-        })
-        .fail(consoleError);
+        location.reload();
     });
 
     $('body').on('change','#employeeType',function(){

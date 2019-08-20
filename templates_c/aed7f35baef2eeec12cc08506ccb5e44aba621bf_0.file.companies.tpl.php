@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-08-19 22:29:53
+/* Smarty version 3.1.30, created on 2019-08-20 06:06:20
   from "/opt/lampp/htdocs/proyectos/Business-Administration/templates/companies.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d5b06c1a708b8_08719373',
+  'unifunc' => 'content_5d5b71bc250439_44148567',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d5b06c1a708b8_08719373 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d5b71bc250439_44148567 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="offset-3 col-6">
 <h1 class="text-center">Listado de empresas</h1>

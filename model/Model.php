@@ -37,7 +37,6 @@
         $queries = $this->loadSQLSchema();
         $connection->exec($queries);
         $this->getConnection();
-        header('Location: '. HOME);
       } catch (PDOException $e) {
         echo $e;
       }
@@ -45,7 +44,7 @@
     
     private function loadSQLSchema()
     {
-      $file = fopen(ROOT_PATH . DB_FILE, "r");
+      $file = fopen(DB_FILE, "r");
       $getSentencias = "";
       while(! feof($file))
       {

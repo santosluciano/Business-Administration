@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-08-20 05:18:39
+/* Smarty version 3.1.30, created on 2019-08-20 06:06:22
   from "/opt/lampp/htdocs/proyectos/Business-Administration/templates/company.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d5b668f59b125_04235037',
+  'unifunc' => 'content_5d5b71bec835b7_28928764',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:employees.tpl' => 1,
   ),
 ),false)) {
-function content_5d5b668f59b125_04235037 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d5b71bec835b7_28928764 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="row">
   <div class="col-6">

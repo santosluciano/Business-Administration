@@ -3,5 +3,5 @@
   define('DB_USER', 'root');
   define('DB_PASSWORD', '');
   define('DB_HOST', 'localhost');
-  define('DB_FILE', '/database/db_administration.sql');
+  define('DB_FILE', 'database/db_administration.sql');
 ?>

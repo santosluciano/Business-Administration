@@ -35,7 +35,7 @@ En Empresa, tengo que poder:
 * buscar por Id y obtener un Empleado
 * obtener el promedio de edad de los empleados
 
-## Prueba del ejercicio
+## Probar del ejercicio
 Para probar el ejercicio se utilizo XAMPP con la base de datos MySql.
 En el archivo db-config.php en la carpeta config se configura el acceso a la base de datos, la misma se crea de manera automatica al abrir por primera vez el sitio.
 
