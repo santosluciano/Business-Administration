@@ -12,6 +12,7 @@ Crear las clases necesarias para administrar los Empleados de una Empresa. Cada 
 * Id
 * Nombre
 * Empleados
+
 **Programador:**
 
 * Id
@@ -19,6 +20,7 @@ Crear las clases necesarias para administrar los Empleados de una Empresa. Cada 
 * Apellido
 * Edad
 * Lenguaje en el que programa( pueden ser: PHP, NET o Python  )
+
 **Diseñador**
 
 * Id
