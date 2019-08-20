@@ -16,7 +16,14 @@
         $employeeType = $this->typeController->getById($typeSpecialtyInfo["id_employee_type"]);
         $employeeTypeSpecialty = new EmployeeTypeSpecialty($typeSpecialtyInfo["id"],$typeSpecialtyInfo["name"],$employeeType);
         return $employeeTypeSpecialty;
-    }  
-  
+    }
+    public function getAll(){
+      $typesSpecialtyInfo = $this->model->getAll();
+      $employeeTypesSpecialty = [];
+      foreach($typesSpecialtyInfo as $typeSpecialtyInfo){
+        $employeeTypesSpecialty[] = $this->createTypeSpecialtyObject($typeSpecialtyInfo);
+      }
+      return $employeeTypesSpecialty;
+    }    
   }
 ?>

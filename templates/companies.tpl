@@ -1,3 +1,4 @@
+<div class="offset-3 col-6">
 <h1 class="text-center">Listado de empresas</h1>
 <table class="table table-hover table-dark">
     <thead>
@@ -18,3 +19,4 @@
         {/foreach}
     </tbody>
 </table>
+</div>

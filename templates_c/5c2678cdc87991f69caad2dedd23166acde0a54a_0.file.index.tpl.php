@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-08-19 19:46:57
+/* Smarty version 3.1.30, created on 2019-08-20 04:34:12
   from "/opt/lampp/htdocs/proyectos/Business-Administration/templates/index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d5ae0916e1f40_47685653',
+  'unifunc' => 'content_5d5b5c24043173_64756606',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5c2678cdc87991f69caad2dedd23166acde0a54a' => 
     array (
       0 => '/opt/lampp/htdocs/proyectos/Business-Administration/templates/index.tpl',
-      1 => 1566236354,
+      1 => 1566268448,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5d5ae0916e1f40_47685653 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d5b5c24043173_64756606 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -47,10 +47,10 @@ $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_sm
       <li class="nav-item">
         <a class="nav-link fas fa-arrow-circle-left fa-lg d-none nav-return" href="#"></a>
       </li>
-    </ul>
+    </ul>    
   </div>
 </nav>
-<div class="container bodyPage">
+<div class="container-fluid bodyPage">
     
 </div>
 <?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);

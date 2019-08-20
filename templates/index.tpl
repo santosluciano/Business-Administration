@@ -20,10 +20,10 @@
       <li class="nav-item">
         <a class="nav-link fas fa-arrow-circle-left fa-lg d-none nav-return" href="#"></a>
       </li>
-    </ul>
+    </ul>    
   </div>
 </nav>
-<div class="container bodyPage">
+<div class="container-fluid bodyPage">
     
 </div>
 {include file="footer.tpl"}

@@ -3,13 +3,13 @@
 
         private $id;
         private $name;
-        private $last_name;
+        private $lastName;
         private $age;
 
-        function __construct($id,$name,$last_name,$age) {
+        function __construct($id,$name,$lastName,$age) {
             $this->setId($id);
             $this->setName($name);  
-            $this->setLastName($last_name);  
+            $this->setLastName($lastName);  
             $this->setAge($age);  
         }
         public function getId(){
@@ -25,10 +25,10 @@
             $this->name = $name;
         }
         public function getLastName() {
-            return $this->name;
+            return $this->lastName;
         }
-        public function setLastName($last_name) {
-            $this->last_name = $last_name;
+        public function setLastName($lastName) {
+            $this->lastName = $lastName;
         }
         public function getAge() {
             return $this->age;
@@ -37,7 +37,7 @@
             $this->age = $age;
         }
         public function getFullName(){
-            return $this->name.' '.$this->last_name;
+            return $this->name.' '.$this->lastName;
         }
     }
 ?>

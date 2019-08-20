@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-08-19 20:05:20
+/* Smarty version 3.1.30, created on 2019-08-19 22:29:53
   from "/opt/lampp/htdocs/proyectos/Business-Administration/templates/companies.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d5ae4e0046343_28314143',
+  'unifunc' => 'content_5d5b06c1a708b8_08719373',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aed7f35baef2eeec12cc08506ccb5e44aba621bf' => 
     array (
       0 => '/opt/lampp/htdocs/proyectos/Business-Administration/templates/companies.tpl',
-      1 => 1566237919,
+      1 => 1566246587,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d5ae4e0046343_28314143 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d5b06c1a708b8_08719373 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
+<div class="offset-3 col-6">
 <h1 class="text-center">Listado de empresas</h1>
 <table class="table table-hover table-dark">
     <thead>
@@ -55,5 +56,5 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 
     </tbody>
 </table>
-<?php }
+</div><?php }
 }

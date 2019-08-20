@@ -17,6 +17,8 @@
   $router->AddRoute("", "GET", "Controller", "layout");
   $router->AddRoute("companies", "GET", "CompanyController", "showAll");
   $router->AddRoute("company/:id","GET", "CompanyController", "show");
+  $router->AddRoute("addEmployee","POST", "EmployeeController", "add");
+  $router->AddRoute("searchEmployee","POST", "EmployeeController", "searchById");
 
 
   // ------------- HANDLER ROUTE ------------------//  

@@ -32,11 +32,16 @@
             $this->employees[] = $employee;
         }
         public function avgEmployees(){
-            $total_age = 0;
+            $totalAge = 0;
             foreach ($this->employees as $employee){
-                $total_age += $employee->getAge();
+                $totalAge += $employee->getAge();
             }
-            return $total_age/$this->countEmployees(); 
+            $numberEmployees = $this->countEmployees();
+            if ($numberEmployees > 0){
+                return $totalAge/$this->countEmployees();                 
+            }else{
+                return 0;
+            }
         }
         public function countEmployees(){
             return count($this->employees);

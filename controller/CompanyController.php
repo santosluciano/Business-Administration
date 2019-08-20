@@ -8,6 +8,8 @@
       $this->model = new CompanyModel();
       $this->view = new CompanyView();
       $this->employeeController = new EmployeeController();
+      $this->employeeTypeController = new employeeTypeController();
+      $this->employeeTypeSpecialtyController = new employeeTypeSpecialtyController();
     }
     public function getAll(){
       $companiesInfo = $this->model->getAllCompanies();
@@ -29,7 +31,9 @@
     public function show($params){
       $id = $params[':id'];
       $company = $this->get($id);
-      $this->view->showCompany($company);
+      $types = $this->employeeTypeController->getAll();
+      $typesSpecialty = $this->employeeTypeSpecialtyController->getAll();
+      $this->view->showCompany($company,$types,$typesSpecialty);
     }
     private function createCompanyObject($companyInfo){
       $company = new Company($companyInfo["id"],$companyInfo["name"]);

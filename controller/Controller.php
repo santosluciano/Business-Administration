@@ -4,9 +4,9 @@
 
   require_once 'view/View.php';
   require_once 'controller/CompanyController.php';
+  require_once 'controller/EmployeeController.php';
   require_once 'controller/EmployeeTypeSpecialtyController.php';
   require_once 'controller/EmployeeTypeController.php';
-  require_once 'controller/EmployeeController.php';
 
 
   class Controller
